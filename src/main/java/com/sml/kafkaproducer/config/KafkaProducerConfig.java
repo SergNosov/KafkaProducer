@@ -1,7 +1,8 @@
 package com.sml.kafkaproducer.config;
 
-import com.sml.kafkaproducer.model.User;
+import com.sml.kafkaproducer.config.serializer.AvroSerializer;
 import lombok.RequiredArgsConstructor;
+import nlmk.l3.sup.IntegralParameters;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -12,7 +13,6 @@ import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaAdmin;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
-import org.springframework.kafka.support.serializer.JsonSerializer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,20 +29,20 @@ public class KafkaProducerConfig {
 
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
         props.put(ProducerConfig.CLIENT_ID_CONFIG, producerKafkaProperties.getKafkaProducerId());
 
         return props;
     }
 
     @Bean
-    public ProducerFactory<String, User> producerFactory() {
+    public ProducerFactory<String, IntegralParameters> producerFactory() {
         return new DefaultKafkaProducerFactory<>(producerConfigs());
     }
 
     @Bean
-    public KafkaTemplate<String, User> kafkaTemplate() {
-        KafkaTemplate<String, User> template = new KafkaTemplate<>(producerFactory());
+    public KafkaTemplate<String, IntegralParameters> kafkaTemplate() {
+        KafkaTemplate<String, IntegralParameters> template = new KafkaTemplate<>(producerFactory());
 
         return template;
     }

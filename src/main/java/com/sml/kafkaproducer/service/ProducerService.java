@@ -1,8 +1,8 @@
 package com.sml.kafkaproducer.service;
 
-import com.sml.kafkaproducer.model.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import nlmk.l3.sup.IntegralParameters;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;
@@ -17,12 +17,12 @@ public class ProducerService {
 
     @Value(value = "${kafka.topic}")
     private String topicName;
-    private final KafkaTemplate<String, User> kafkaTemplate;
+    private final KafkaTemplate<String, IntegralParameters> kafkaTemplate;
 
-    public void produceMessage(User user) {
-        Message<User> message = MessageBuilder
-                .withPayload(user)
-                .setHeader(KafkaHeaders.MESSAGE_KEY,user.getId())
+    public void produceMessage(IntegralParameters integralParameters) {
+        Message<IntegralParameters> message = MessageBuilder
+                .withPayload(integralParameters)
+                .setHeader(KafkaHeaders.MESSAGE_KEY,Integer.valueOf(integralParameters.getPk().getId()).toString())
                 .setHeader(KafkaHeaders.TOPIC,topicName)
                 .build();
 
