@@ -3,9 +3,8 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package nlmk.l3.sup;
+package integralparameters.nlmk.l3.sup;
 
-import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -15,7 +14,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class RecordData extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -8563357007306058819L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordData\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"primeID\",\"type\":\"string\",\"doc\":\"identifikator (ID) edenicy EM v pervoistochnike CCM\"},{\"name\":\"kceh\",\"type\":\"int\",\"doc\":\"nomer ceha\"},{\"name\":\"kcehName\",\"type\":\"string\",\"doc\":\"nazvanie ceha\"},{\"name\":\"unitCode\",\"type\":\"int\",\"doc\":\"kod agregata\"},{\"name\":\"unitName\",\"type\":\"string\",\"doc\":\"nazvanie agregata\"},{\"name\":\"werksCode\",\"type\":\"int\",\"doc\":\"kod zavoda\"},{\"name\":\"werksName\",\"type\":\"string\",\"doc\":\"naimenovanie zavoda\"},{\"name\":\"specifications\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod harakteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie harakteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znacheniye harakteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"fomat peredachi harakteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmerenya\",\"default\":null}]}}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordData\",\"namespace\":\"integralparameters.sup\",\"fields\":[{\"name\":\"primeID\",\"type\":\"string\",\"doc\":\"identifikator (ID) edenicy EM v pervoistochnike CCM\"},{\"name\":\"kceh\",\"type\":\"int\",\"doc\":\"nomer ceha\"},{\"name\":\"kcehName\",\"type\":\"string\",\"doc\":\"nazvanie ceha\"},{\"name\":\"unitCode\",\"type\":\"int\",\"doc\":\"kod agregata\"},{\"name\":\"unitName\",\"type\":\"string\",\"doc\":\"nazvanie agregata\"},{\"name\":\"werksCode\",\"type\":\"int\",\"doc\":\"kod zavoda\"},{\"name\":\"werksName\",\"type\":\"string\",\"doc\":\"naimenovanie zavoda\"},{\"name\":\"specifications\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod harakteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie harakteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znacheniye harakteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"fomat peredachi harakteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmerenya\",\"default\":null}]}}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -85,7 +84,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
    private int werksCode;
   /** naimenovanie zavoda */
    private java.lang.CharSequence werksName;
-   private java.util.List<nlmk.l3.sup.RecordSpecifications> specifications;
+   private java.util.List<RecordSpecifications> specifications;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -105,7 +104,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
    * @param werksName naimenovanie zavoda
    * @param specifications The new value for specifications
    */
-  public RecordData(java.lang.CharSequence primeID, java.lang.Integer kceh, java.lang.CharSequence kcehName, java.lang.Integer unitCode, java.lang.CharSequence unitName, java.lang.Integer werksCode, java.lang.CharSequence werksName, java.util.List<nlmk.l3.sup.RecordSpecifications> specifications) {
+  public RecordData(java.lang.CharSequence primeID, java.lang.Integer kceh, java.lang.CharSequence kcehName, java.lang.Integer unitCode, java.lang.CharSequence unitName, java.lang.Integer werksCode, java.lang.CharSequence werksName, java.util.List<RecordSpecifications> specifications) {
     this.primeID = primeID;
     this.kceh = kceh;
     this.kcehName = kcehName;
@@ -144,7 +143,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
     case 4: unitName = (java.lang.CharSequence)value$; break;
     case 5: werksCode = (java.lang.Integer)value$; break;
     case 6: werksName = (java.lang.CharSequence)value$; break;
-    case 7: specifications = (java.util.List<nlmk.l3.sup.RecordSpecifications>)value$; break;
+    case 7: specifications = (java.util.List<RecordSpecifications>)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -279,7 +278,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'specifications' field.
    * @return The value of the 'specifications' field.
    */
-  public java.util.List<nlmk.l3.sup.RecordSpecifications> getSpecifications() {
+  public java.util.List<RecordSpecifications> getSpecifications() {
     return specifications;
   }
 
@@ -288,7 +287,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'specifications' field.
    * @param value the value to set.
    */
-  public void setSpecifications(java.util.List<nlmk.l3.sup.RecordSpecifications> value) {
+  public void setSpecifications(java.util.List<RecordSpecifications> value) {
     this.specifications = value;
   }
 
@@ -296,8 +295,8 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
    * Creates a new RecordData RecordBuilder.
    * @return A new RecordData RecordBuilder
    */
-  public static nlmk.l3.sup.RecordData.Builder newBuilder() {
-    return new nlmk.l3.sup.RecordData.Builder();
+  public static RecordData.Builder newBuilder() {
+    return new RecordData.Builder();
   }
 
   /**
@@ -305,11 +304,11 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
    * @param other The existing builder to copy.
    * @return A new RecordData RecordBuilder
    */
-  public static nlmk.l3.sup.RecordData.Builder newBuilder(nlmk.l3.sup.RecordData.Builder other) {
+  public static RecordData.Builder newBuilder(RecordData.Builder other) {
     if (other == null) {
-      return new nlmk.l3.sup.RecordData.Builder();
+      return new RecordData.Builder();
     } else {
-      return new nlmk.l3.sup.RecordData.Builder(other);
+      return new RecordData.Builder(other);
     }
   }
 
@@ -318,11 +317,11 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
    * @param other The existing instance to copy.
    * @return A new RecordData RecordBuilder
    */
-  public static nlmk.l3.sup.RecordData.Builder newBuilder(nlmk.l3.sup.RecordData other) {
+  public static RecordData.Builder newBuilder(RecordData other) {
     if (other == null) {
-      return new nlmk.l3.sup.RecordData.Builder();
+      return new RecordData.Builder();
     } else {
-      return new nlmk.l3.sup.RecordData.Builder(other);
+      return new RecordData.Builder(other);
     }
   }
 
@@ -347,7 +346,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
     private int werksCode;
     /** naimenovanie zavoda */
     private java.lang.CharSequence werksName;
-    private java.util.List<nlmk.l3.sup.RecordSpecifications> specifications;
+    private java.util.List<RecordSpecifications> specifications;
 
     /** Creates a new Builder */
     private Builder() {
@@ -358,7 +357,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(nlmk.l3.sup.RecordData.Builder other) {
+    private Builder(RecordData.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.primeID)) {
         this.primeID = data().deepCopy(fields()[0].schema(), other.primeID);
@@ -398,7 +397,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
      * Creates a Builder by copying an existing RecordData instance
      * @param other The existing instance to copy.
      */
-    private Builder(nlmk.l3.sup.RecordData other) {
+    private Builder(RecordData other) {
       super(SCHEMA$);
       if (isValidValue(fields()[0], other.primeID)) {
         this.primeID = data().deepCopy(fields()[0].schema(), other.primeID);
@@ -450,7 +449,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'primeID'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setPrimeID(java.lang.CharSequence value) {
+    public RecordData.Builder setPrimeID(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.primeID = value;
       fieldSetFlags()[0] = true;
@@ -472,7 +471,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * identifikator (ID) edenicy EM v pervoistochnike CCM
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearPrimeID() {
+    public RecordData.Builder clearPrimeID() {
       primeID = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -494,7 +493,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'kceh'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setKceh(int value) {
+    public RecordData.Builder setKceh(int value) {
       validate(fields()[1], value);
       this.kceh = value;
       fieldSetFlags()[1] = true;
@@ -516,7 +515,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * nomer ceha
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearKceh() {
+    public RecordData.Builder clearKceh() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -537,7 +536,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'kcehName'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setKcehName(java.lang.CharSequence value) {
+    public RecordData.Builder setKcehName(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.kcehName = value;
       fieldSetFlags()[2] = true;
@@ -559,7 +558,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * nazvanie ceha
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearKcehName() {
+    public RecordData.Builder clearKcehName() {
       kcehName = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -581,7 +580,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'unitCode'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setUnitCode(int value) {
+    public RecordData.Builder setUnitCode(int value) {
       validate(fields()[3], value);
       this.unitCode = value;
       fieldSetFlags()[3] = true;
@@ -603,7 +602,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * kod agregata
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearUnitCode() {
+    public RecordData.Builder clearUnitCode() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -624,7 +623,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'unitName'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setUnitName(java.lang.CharSequence value) {
+    public RecordData.Builder setUnitName(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.unitName = value;
       fieldSetFlags()[4] = true;
@@ -646,7 +645,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * nazvanie agregata
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearUnitName() {
+    public RecordData.Builder clearUnitName() {
       unitName = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -668,7 +667,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'werksCode'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setWerksCode(int value) {
+    public RecordData.Builder setWerksCode(int value) {
       validate(fields()[5], value);
       this.werksCode = value;
       fieldSetFlags()[5] = true;
@@ -690,7 +689,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * kod zavoda
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearWerksCode() {
+    public RecordData.Builder clearWerksCode() {
       fieldSetFlags()[5] = false;
       return this;
     }
@@ -711,7 +710,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'werksName'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setWerksName(java.lang.CharSequence value) {
+    public RecordData.Builder setWerksName(java.lang.CharSequence value) {
       validate(fields()[6], value);
       this.werksName = value;
       fieldSetFlags()[6] = true;
@@ -733,7 +732,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * naimenovanie zavoda
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearWerksName() {
+    public RecordData.Builder clearWerksName() {
       werksName = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -743,7 +742,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'specifications' field.
       * @return The value.
       */
-    public java.util.List<nlmk.l3.sup.RecordSpecifications> getSpecifications() {
+    public java.util.List<RecordSpecifications> getSpecifications() {
       return specifications;
     }
 
@@ -753,7 +752,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'specifications'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder setSpecifications(java.util.List<nlmk.l3.sup.RecordSpecifications> value) {
+    public RecordData.Builder setSpecifications(java.util.List<RecordSpecifications> value) {
       validate(fields()[7], value);
       this.specifications = value;
       fieldSetFlags()[7] = true;
@@ -773,7 +772,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'specifications' field.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordData.Builder clearSpecifications() {
+    public RecordData.Builder clearSpecifications() {
       specifications = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -791,7 +790,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
         record.unitName = fieldSetFlags()[4] ? this.unitName : (java.lang.CharSequence) defaultValue(fields()[4]);
         record.werksCode = fieldSetFlags()[5] ? this.werksCode : (java.lang.Integer) defaultValue(fields()[5]);
         record.werksName = fieldSetFlags()[6] ? this.werksName : (java.lang.CharSequence) defaultValue(fields()[6]);
-        record.specifications = fieldSetFlags()[7] ? this.specifications : (java.util.List<nlmk.l3.sup.RecordSpecifications>) defaultValue(fields()[7]);
+        record.specifications = fieldSetFlags()[7] ? this.specifications : (java.util.List<RecordSpecifications>) defaultValue(fields()[7]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
@@ -842,7 +841,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
     out.writeArrayStart();
     out.setItemCount(size0);
     long actualSize0 = 0;
-    for (nlmk.l3.sup.RecordSpecifications e0: this.specifications) {
+    for (RecordSpecifications e0: this.specifications) {
       actualSize0++;
       out.startItem();
       e0.customEncode(out);
@@ -873,17 +872,17 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
       this.werksName = in.readString(this.werksName instanceof Utf8 ? (Utf8)this.werksName : null);
 
       long size0 = in.readArrayStart();
-      java.util.List<nlmk.l3.sup.RecordSpecifications> a0 = this.specifications;
+      java.util.List<RecordSpecifications> a0 = this.specifications;
       if (a0 == null) {
-        a0 = new SpecificData.Array<nlmk.l3.sup.RecordSpecifications>((int)size0, SCHEMA$.getField("specifications").schema());
+        a0 = new SpecificData.Array<RecordSpecifications>((int)size0, SCHEMA$.getField("specifications").schema());
         this.specifications = a0;
       } else a0.clear();
-      SpecificData.Array<nlmk.l3.sup.RecordSpecifications> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<nlmk.l3.sup.RecordSpecifications>)a0 : null);
+      SpecificData.Array<RecordSpecifications> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<RecordSpecifications>)a0 : null);
       for ( ; 0 < size0; size0 = in.arrayNext()) {
         for ( ; size0 != 0; size0--) {
-          nlmk.l3.sup.RecordSpecifications e0 = (ga0 != null ? ga0.peek() : null);
+          RecordSpecifications e0 = (ga0 != null ? ga0.peek() : null);
           if (e0 == null) {
-            e0 = new nlmk.l3.sup.RecordSpecifications();
+            e0 = new RecordSpecifications();
           }
           e0.customDecode(in);
           a0.add(e0);
@@ -923,17 +922,17 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
         case 7:
           long size0 = in.readArrayStart();
-          java.util.List<nlmk.l3.sup.RecordSpecifications> a0 = this.specifications;
+          java.util.List<RecordSpecifications> a0 = this.specifications;
           if (a0 == null) {
-            a0 = new SpecificData.Array<nlmk.l3.sup.RecordSpecifications>((int)size0, SCHEMA$.getField("specifications").schema());
+            a0 = new SpecificData.Array<RecordSpecifications>((int)size0, SCHEMA$.getField("specifications").schema());
             this.specifications = a0;
           } else a0.clear();
-          SpecificData.Array<nlmk.l3.sup.RecordSpecifications> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<nlmk.l3.sup.RecordSpecifications>)a0 : null);
+          SpecificData.Array<RecordSpecifications> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<RecordSpecifications>)a0 : null);
           for ( ; 0 < size0; size0 = in.arrayNext()) {
             for ( ; size0 != 0; size0--) {
-              nlmk.l3.sup.RecordSpecifications e0 = (ga0 != null ? ga0.peek() : null);
+              RecordSpecifications e0 = (ga0 != null ? ga0.peek() : null);
               if (e0 == null) {
-                e0 = new nlmk.l3.sup.RecordSpecifications();
+                e0 = new RecordSpecifications();
               }
               e0.customDecode(in);
               a0.add(e0);

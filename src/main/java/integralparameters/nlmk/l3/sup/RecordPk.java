@@ -3,11 +3,9 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package nlmk.l3.sup;
+package integralparameters.nlmk.l3.sup;
 
-import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
-import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
@@ -15,7 +13,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -5899783138468371936L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordPk\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"id\",\"type\":\"int\",\"doc\":\"ID EM SUP\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordPk\",\"namespace\":\"integralparameters.sup\",\"fields\":[{\"name\":\"id\",\"type\":\"int\",\"doc\":\"ID EM SUP\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -130,8 +128,8 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
    * Creates a new RecordPk RecordBuilder.
    * @return A new RecordPk RecordBuilder
    */
-  public static nlmk.l3.sup.RecordPk.Builder newBuilder() {
-    return new nlmk.l3.sup.RecordPk.Builder();
+  public static RecordPk.Builder newBuilder() {
+    return new RecordPk.Builder();
   }
 
   /**
@@ -139,11 +137,11 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing builder to copy.
    * @return A new RecordPk RecordBuilder
    */
-  public static nlmk.l3.sup.RecordPk.Builder newBuilder(nlmk.l3.sup.RecordPk.Builder other) {
+  public static RecordPk.Builder newBuilder(RecordPk.Builder other) {
     if (other == null) {
-      return new nlmk.l3.sup.RecordPk.Builder();
+      return new RecordPk.Builder();
     } else {
-      return new nlmk.l3.sup.RecordPk.Builder(other);
+      return new RecordPk.Builder(other);
     }
   }
 
@@ -152,11 +150,11 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing instance to copy.
    * @return A new RecordPk RecordBuilder
    */
-  public static nlmk.l3.sup.RecordPk.Builder newBuilder(nlmk.l3.sup.RecordPk other) {
+  public static RecordPk.Builder newBuilder(RecordPk other) {
     if (other == null) {
-      return new nlmk.l3.sup.RecordPk.Builder();
+      return new RecordPk.Builder();
     } else {
-      return new nlmk.l3.sup.RecordPk.Builder(other);
+      return new RecordPk.Builder(other);
     }
   }
 
@@ -179,7 +177,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(nlmk.l3.sup.RecordPk.Builder other) {
+    private Builder(RecordPk.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -191,7 +189,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing RecordPk instance
      * @param other The existing instance to copy.
      */
-    private Builder(nlmk.l3.sup.RecordPk other) {
+    private Builder(RecordPk other) {
       super(SCHEMA$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -215,7 +213,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordPk.Builder setId(int value) {
+    public RecordPk.Builder setId(int value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -237,7 +235,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
       * ID EM SUP
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordPk.Builder clearId() {
+    public RecordPk.Builder clearId() {
       fieldSetFlags()[0] = false;
       return this;
     }

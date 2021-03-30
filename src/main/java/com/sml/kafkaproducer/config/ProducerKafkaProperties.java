@@ -9,13 +9,16 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class ProducerKafkaProperties {
     private final String kafkaServer;
     private final String kafkaProducerId;
-    private final String kafkaTopic;
+    private final String kafkaTopicIP;
+    private final String kafkaTopicUP;
 
     public ProducerKafkaProperties(@Value("${kafka.bootstrap-servers}") String kafkaServer,
                                    @Value("${kafka.producer.id}") String kafkaProducerId,
-                                   @Value("${kafka.topic}") String kafkaTopic) {
+                                   @Value("${kafka.topicIP}") String kafkaTopicIP,
+                                   @Value("${kafka.topicUP}") String kafkaTopicUP) {
         this.kafkaServer = kafkaServer;
         this.kafkaProducerId = kafkaProducerId;
-        this.kafkaTopic = kafkaTopic;
+        this.kafkaTopicIP = kafkaTopicIP;
+        this.kafkaTopicUP = kafkaTopicUP;
     }
 }

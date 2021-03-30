@@ -2,15 +2,14 @@ package com.sml.kafkaproducer.controller;
 
 import com.sml.kafkaproducer.service.ProducerService;
 import lombok.RequiredArgsConstructor;
-import nlmk.l3.sup.RecordPk;
-import nlmk.l3.sup.enum_op;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 import java.util.Random;
 
-import nlmk.l3.sup.IntegralParameters;
+import integralparameters.nlmk.l3.sup.IntegralParameters;
+import unrecoverableparameterstrends.nlmk.l3.sup.UnrecoverableParametersTrends;
 
 @RestController
 @RequiredArgsConstructor
@@ -23,15 +22,32 @@ public class ProducerController {
 
         IntegralParameters integralParameters = IntegralParameters.newBuilder()
                 .setTs(LocalDateTime.now().toString())
-                .setOp(enum_op.I)
+                .setOp(integralparameters.nlmk.l3.sup.enum_op.I)
                 .setPk(
-                      RecordPk.newBuilder()
-                              .setId(new Random().nextInt(3))
+                        integralparameters.nlmk.l3.sup.RecordPk.newBuilder()
+                              .setId(new Random().nextInt(100))
                               .build()
                 )
                 .setData(null)
                 .build();
 
-      producerService.produceMessage(integralParameters);
+      producerService.produceMessageIP(integralParameters);
+    }
+
+    @GetMapping("/unrecoverable_parameters")
+    public void sendUP() {
+
+        UnrecoverableParametersTrends unrecoverableParameters = UnrecoverableParametersTrends.newBuilder()
+                .setTs(LocalDateTime.now().toString())
+                .setOp(unrecoverableparameterstrends.nlmk.l3.sup.enum_op.I)
+                .setPk(
+                        unrecoverableparameterstrends.nlmk.l3.sup.RecordPk.newBuilder()
+                                .setId(new Random().nextInt(100))
+                                .build()
+                )
+                .setData(null)
+                .build();
+
+        producerService.produceMessageUP(unrecoverableParameters);
     }
 }

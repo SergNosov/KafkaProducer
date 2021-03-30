@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package nlmk.l3.sup;
+package unrecoverableparameterstrends.nlmk.l3.sup;
 @org.apache.avro.specific.AvroGenerated
 public enum enum_op implements org.apache.avro.generic.GenericEnumSymbol<enum_op> {
   I, U, D  ;

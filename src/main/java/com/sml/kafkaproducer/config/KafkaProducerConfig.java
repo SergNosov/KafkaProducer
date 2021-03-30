@@ -2,7 +2,7 @@ package com.sml.kafkaproducer.config;
 
 import com.sml.kafkaproducer.config.serializer.AvroSerializer;
 import lombok.RequiredArgsConstructor;
-import nlmk.l3.sup.IntegralParameters;
+import integralparameters.nlmk.l3.sup.IntegralParameters;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -13,6 +13,7 @@ import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaAdmin;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
+import unrecoverableparameterstrends.nlmk.l3.sup.UnrecoverableParametersTrends;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,13 +37,27 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public ProducerFactory<String, IntegralParameters> producerFactory() {
+    public ProducerFactory<String, IntegralParameters> producerFactoryIP() {
         return new DefaultKafkaProducerFactory<>(producerConfigs());
     }
 
     @Bean
-    public KafkaTemplate<String, IntegralParameters> kafkaTemplate() {
-        KafkaTemplate<String, IntegralParameters> template = new KafkaTemplate<>(producerFactory());
+    public KafkaTemplate<String, IntegralParameters> kafkaTemplateIP() {
+        KafkaTemplate<String, IntegralParameters> template =
+                new KafkaTemplate<>(producerFactoryIP());
+
+        return template;
+    }
+
+    @Bean
+    public ProducerFactory<String, UnrecoverableParametersTrends> producerFactoryUP() {
+        return new DefaultKafkaProducerFactory<>(producerConfigs());
+    }
+
+    @Bean
+    public KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP() {
+        KafkaTemplate<String, UnrecoverableParametersTrends> template =
+                new KafkaTemplate<>(producerFactoryUP());
 
         return template;
     }
@@ -58,7 +73,12 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public NewTopic testTopic() {
-        return new NewTopic(producerKafkaProperties.getKafkaTopic(), 1, (short) 1);
+    public NewTopic topicIP() {
+        return new NewTopic(producerKafkaProperties.getKafkaTopicIP(), 1, (short) 1);
+    }
+
+    @Bean
+    public NewTopic topicUP() {
+        return new NewTopic(producerKafkaProperties.getKafkaTopicUP(), 1, (short) 1);
     }
 }

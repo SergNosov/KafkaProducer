@@ -3,9 +3,8 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package nlmk.l3.sup;
+package integralparameters.nlmk.l3.sup;
 
-import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -15,7 +14,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class RecordSpecifications extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 5009827299060469327L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod harakteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie harakteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znacheniye harakteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"fomat peredachi harakteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmerenya\",\"default\":null}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"namespace\":\"integralparameters.sup\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod harakteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie harakteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znacheniye harakteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"fomat peredachi harakteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmerenya\",\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -274,8 +273,8 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
    * Creates a new RecordSpecifications RecordBuilder.
    * @return A new RecordSpecifications RecordBuilder
    */
-  public static nlmk.l3.sup.RecordSpecifications.Builder newBuilder() {
-    return new nlmk.l3.sup.RecordSpecifications.Builder();
+  public static RecordSpecifications.Builder newBuilder() {
+    return new RecordSpecifications.Builder();
   }
 
   /**
@@ -283,11 +282,11 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
    * @param other The existing builder to copy.
    * @return A new RecordSpecifications RecordBuilder
    */
-  public static nlmk.l3.sup.RecordSpecifications.Builder newBuilder(nlmk.l3.sup.RecordSpecifications.Builder other) {
+  public static RecordSpecifications.Builder newBuilder(RecordSpecifications.Builder other) {
     if (other == null) {
-      return new nlmk.l3.sup.RecordSpecifications.Builder();
+      return new RecordSpecifications.Builder();
     } else {
-      return new nlmk.l3.sup.RecordSpecifications.Builder(other);
+      return new RecordSpecifications.Builder(other);
     }
   }
 
@@ -296,11 +295,11 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
    * @param other The existing instance to copy.
    * @return A new RecordSpecifications RecordBuilder
    */
-  public static nlmk.l3.sup.RecordSpecifications.Builder newBuilder(nlmk.l3.sup.RecordSpecifications other) {
+  public static RecordSpecifications.Builder newBuilder(RecordSpecifications other) {
     if (other == null) {
-      return new nlmk.l3.sup.RecordSpecifications.Builder();
+      return new RecordSpecifications.Builder();
     } else {
-      return new nlmk.l3.sup.RecordSpecifications.Builder(other);
+      return new RecordSpecifications.Builder(other);
     }
   }
 
@@ -335,7 +334,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(nlmk.l3.sup.RecordSpecifications.Builder other) {
+    private Builder(RecordSpecifications.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.specCode)) {
         this.specCode = data().deepCopy(fields()[0].schema(), other.specCode);
@@ -371,7 +370,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
      * Creates a Builder by copying an existing RecordSpecifications instance
      * @param other The existing instance to copy.
      */
-    private Builder(nlmk.l3.sup.RecordSpecifications other) {
+    private Builder(RecordSpecifications other) {
       super(SCHEMA$);
       if (isValidValue(fields()[0], other.specCode)) {
         this.specCode = data().deepCopy(fields()[0].schema(), other.specCode);
@@ -419,7 +418,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'specCode'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder setSpecCode(int value) {
+    public RecordSpecifications.Builder setSpecCode(int value) {
       validate(fields()[0], value);
       this.specCode = value;
       fieldSetFlags()[0] = true;
@@ -441,7 +440,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * kod harakteristiki
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder clearSpecCode() {
+    public RecordSpecifications.Builder clearSpecCode() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -462,7 +461,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'specName'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder setSpecName(java.lang.CharSequence value) {
+    public RecordSpecifications.Builder setSpecName(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.specName = value;
       fieldSetFlags()[1] = true;
@@ -484,7 +483,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * naimenovanie harakteristiki
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder clearSpecName() {
+    public RecordSpecifications.Builder clearSpecName() {
       specName = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -506,7 +505,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'specTypeCode'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder setSpecTypeCode(int value) {
+    public RecordSpecifications.Builder setSpecTypeCode(int value) {
       validate(fields()[2], value);
       this.specTypeCode = value;
       fieldSetFlags()[2] = true;
@@ -528,7 +527,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * tip dannyh (1-string, 2-number, 3-date)
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder clearSpecTypeCode() {
+    public RecordSpecifications.Builder clearSpecTypeCode() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -549,7 +548,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'specTypeName'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder setSpecTypeName(java.lang.CharSequence value) {
+    public RecordSpecifications.Builder setSpecTypeName(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.specTypeName = value;
       fieldSetFlags()[3] = true;
@@ -571,7 +570,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * naimenovanie tipa dannyh
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder clearSpecTypeName() {
+    public RecordSpecifications.Builder clearSpecTypeName() {
       specTypeName = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -593,7 +592,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'specValue'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder setSpecValue(java.lang.Float value) {
+    public RecordSpecifications.Builder setSpecValue(java.lang.Float value) {
       validate(fields()[4], value);
       this.specValue = value;
       fieldSetFlags()[4] = true;
@@ -615,7 +614,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * znacheniye harakteristiki
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder clearSpecValue() {
+    public RecordSpecifications.Builder clearSpecValue() {
       specValue = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -637,7 +636,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'specFormat'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder setSpecFormat(java.lang.CharSequence value) {
+    public RecordSpecifications.Builder setSpecFormat(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.specFormat = value;
       fieldSetFlags()[5] = true;
@@ -659,7 +658,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * fomat peredachi harakteristiki
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder clearSpecFormat() {
+    public RecordSpecifications.Builder clearSpecFormat() {
       specFormat = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -681,7 +680,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'specMeasure'.
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder setSpecMeasure(java.lang.CharSequence value) {
+    public RecordSpecifications.Builder setSpecMeasure(java.lang.CharSequence value) {
       validate(fields()[6], value);
       this.specMeasure = value;
       fieldSetFlags()[6] = true;
@@ -703,7 +702,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
       * edenica izmerenya
       * @return This builder.
       */
-    public nlmk.l3.sup.RecordSpecifications.Builder clearSpecMeasure() {
+    public RecordSpecifications.Builder clearSpecMeasure() {
       specMeasure = null;
       fieldSetFlags()[6] = false;
       return this;
