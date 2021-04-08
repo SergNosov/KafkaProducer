@@ -16,33 +16,13 @@ import unrecoverableparameterstrends.nlmk.l3.sup.UnrecoverableParametersTrends;
 @RequiredArgsConstructor
 public class ProducerService {
 
-    @Value(value = "${kafka.topicIP}")
-    private String topicIP;
-    @Value(value = "${kafka.topicUP}")
-    private String topicUP;
+    private final KafkaTemplate<String, String> kafkaTemplateIP;
 
-    private final KafkaTemplate<String, IntegralParameters> kafkaTemplateIP;
-    private final KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP;
-
-    public void produceMessageIP(IntegralParameters integralParameters) {
-        Message<IntegralParameters> message = MessageBuilder
+    public void produceMessageIP(String integralParameters) {
+        Message<String> message = MessageBuilder
                 .withPayload(integralParameters)
-                .setHeader(KafkaHeaders.MESSAGE_KEY,Integer.valueOf(integralParameters.getPk().getId()).toString())
-                .setHeader(KafkaHeaders.TOPIC,topicIP)
                 .build();
         kafkaTemplateIP.send(message);
         log.info("--- sending message: "+message);
-       // log.info("--- sending message IntegralParameters: " + message.toString());
-    }
-
-    public void produceMessageUP(UnrecoverableParametersTrends unrecoverableParameters) {
-        Message<UnrecoverableParametersTrends> message = MessageBuilder
-                .withPayload(unrecoverableParameters)
-                .setHeader(KafkaHeaders.MESSAGE_KEY, Integer.valueOf(unrecoverableParameters.getPk().getId()).toString())
-                .setHeader(KafkaHeaders.TOPIC, topicUP)
-                .build();
-
-        kafkaTemplateUP.send(message);
-        log.info("--- sending message UnrecoverableParametersTrends: " + message);
     }
 }

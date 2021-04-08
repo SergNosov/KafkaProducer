@@ -22,74 +22,49 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class KafkaProducerConfig {
 
-    private final ProducerKafkaProperties producerKafkaProperties;
+  //  private final ProducerKafkaProperties producerKafkaProperties;
 
-    /**
-     * При создании двух и более producer при установки в единый producerConfigs()     *
-     * возникает ошибка: javax.management.InstanceAlreadyExistsException: kafka.producer:type=
-     * причина: разные потоки обращаются к одному бину....
-     * ????? это не выход -  для предотвращения ошибки следует не устанавливать значения в общем producerConfigs();
-     */
+//
+//    @Bean
+//    public ProducerFactory<String, String > producerFactoryIP() {
+//        Map<String, Object> propsIP = new HashMap<>();
+//        propsIP.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
+//        propsIP.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+//        propsIP.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+//        propsIP.put(ProducerConfig.CLIENT_ID_CONFIG, producerKafkaProperties.getKafkaProducerId());
+//        propsIP.put(ProducerConfig.)
+//
+//        DefaultKafkaProducerFactory factory =
+//                new DefaultKafkaProducerFactory<>(propsIP);
+//
+//        return factory;
+//    }
 
-    @Bean
-    public ProducerFactory<String, IntegralParameters> producerFactoryIP() {
-        Map<String, Object> propsIP = new HashMap<>();
-        propsIP.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
-        propsIP.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        propsIP.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
-        propsIP.put(ProducerConfig.CLIENT_ID_CONFIG,
-                producerKafkaProperties.getKafkaProducerId());
+//    @Bean
+//    public KafkaTemplate<String, String> kafkaTemplateIP() {
+//        KafkaTemplate<String, String> template =
+//                new KafkaTemplate<>(producerFactoryIP());
+//
+//        return template;
+//    }
 
-        DefaultKafkaProducerFactory factory =
-                new DefaultKafkaProducerFactory<>(propsIP);
-
-        return factory;
-    }
-
-    @Bean
-    public KafkaTemplate<String, IntegralParameters> kafkaTemplateIP() {
-        KafkaTemplate<String, IntegralParameters> template =
-                new KafkaTemplate<>(producerFactoryIP());
-
-        return template;
-    }
-
-    @Bean
-    public ProducerFactory<String, UnrecoverableParametersTrends> producerFactoryUP() {
-        Map<String, Object> propsUP = new HashMap<>();
-        propsUP.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
-        propsUP.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        propsUP.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
-        propsUP.put(ProducerConfig.CLIENT_ID_CONFIG, "producer - 888");
-
-        return new DefaultKafkaProducerFactory<>(propsUP);
-    }
-
-    @Bean
-    public KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP() {
-        KafkaTemplate<String, UnrecoverableParametersTrends> template =
-                new KafkaTemplate<>(producerFactoryUP());
-
-        return template;
-    }
-
-    @Bean
-    public KafkaAdmin kafkaAdmin() {
-        Map<String, Object> configs = new HashMap<>();
-
-        configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG,
-                producerKafkaProperties.getKafkaServer());
-
-        return new KafkaAdmin(configs);
-    }
-
-    @Bean
-    public NewTopic topicIP() {
-        return new NewTopic(producerKafkaProperties.getKafkaTopicIP(), 1, (short) 1);
-    }
-
-    @Bean
-    public NewTopic topicUP() {
-        return new NewTopic(producerKafkaProperties.getKafkaTopicUP(), 1, (short) 1);
-    }
+//    @Bean
+//    public KafkaAdmin kafkaAdmin() {
+//        Map<String, Object> configs = new HashMap<>();
+//
+//        configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG,
+//                producerKafkaProperties.getKafkaServer());
+//
+//        return new KafkaAdmin(configs);
+//    }
+//
+//    @Bean
+//    public NewTopic topicIP() {
+//        return new NewTopic(producerKafkaProperties.getKafkaTopicIP(), 1, (short) 1);
+//    }
+//
+//    @Bean
+//    public NewTopic topicUP() {
+//        return new NewTopic(producerKafkaProperties.getKafkaTopicUP(), 1, (short) 1);
+//    }
 }

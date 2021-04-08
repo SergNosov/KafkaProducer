@@ -21,7 +21,7 @@ public class ProducerController {
     @GetMapping("/integral_parameters/{correct}")
     public void sendIP(@PathVariable boolean correct) {
 
-      producerService.produceMessageIP(generateIP(correct));
+      producerService.produceMessageIP("Hello Kafka SSL");
     }
 
     private IntegralParameters generateIP(boolean correct){
@@ -43,21 +43,21 @@ public class ProducerController {
 
         return integralParameters;
     }
-
-    @GetMapping("/unrecoverable_parameters")
-    public void sendUP() {
-
-        UnrecoverableParametersTrends unrecoverableParameters = UnrecoverableParametersTrends.newBuilder()
-                .setTs(LocalDateTime.now().toString())
-                .setOp(unrecoverableparameterstrends.nlmk.l3.sup.enum_op.I)
-                .setPk(
-                        unrecoverableparameterstrends.nlmk.l3.sup.RecordPk.newBuilder()
-                                .setId(new Random().nextInt(100))
-                                .build()
-                )
-                .setData(null)
-                .build();
-
-        producerService.produceMessageUP(unrecoverableParameters);
-    }
+//
+//    @GetMapping("/unrecoverable_parameters")
+//    public void sendUP() {
+//
+//        UnrecoverableParametersTrends unrecoverableParameters = UnrecoverableParametersTrends.newBuilder()
+//                .setTs(LocalDateTime.now().toString())
+//                .setOp(unrecoverableparameterstrends.nlmk.l3.sup.enum_op.I)
+//                .setPk(
+//                        unrecoverableparameterstrends.nlmk.l3.sup.RecordPk.newBuilder()
+//                                .setId(new Random().nextInt(100))
+//                                .build()
+//                )
+//                .setData(null)
+//                .build();
+//
+//        producerService.produceMessageUP(unrecoverableParameters);
+//    }
 }
