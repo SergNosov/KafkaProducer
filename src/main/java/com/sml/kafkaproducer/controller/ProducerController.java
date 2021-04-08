@@ -3,6 +3,7 @@ package com.sml.kafkaproducer.controller;
 import com.sml.kafkaproducer.service.ProducerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
@@ -17,21 +18,30 @@ public class ProducerController {
 
     private final ProducerService producerService;
 
-    @GetMapping("/integral_parameters")
-    public void sendIP() {
+    @GetMapping("/integral_parameters/{correct}")
+    public void sendIP(@PathVariable boolean correct) {
+
+      producerService.produceMessageIP(generateIP(correct));
+    }
+
+    private IntegralParameters generateIP(boolean correct){
+
+        int idRecordPK=0;
+
+        if (correct) idRecordPK = new Random().nextInt(100);
 
         IntegralParameters integralParameters = IntegralParameters.newBuilder()
                 .setTs(LocalDateTime.now().toString())
                 .setOp(integralparameters.nlmk.l3.sup.enum_op.I)
                 .setPk(
                         integralparameters.nlmk.l3.sup.RecordPk.newBuilder()
-                              .setId(new Random().nextInt(100))
-                              .build()
+                                .setId(idRecordPK)
+                                .build()
                 )
                 .setData(null)
                 .build();
 
-      producerService.produceMessageIP(integralParameters);
+        return integralParameters;
     }
 
     @GetMapping("/unrecoverable_parameters")

@@ -30,19 +30,19 @@ public class ProducerService {
                 .setHeader(KafkaHeaders.MESSAGE_KEY,Integer.valueOf(integralParameters.getPk().getId()).toString())
                 .setHeader(KafkaHeaders.TOPIC,topicIP)
                 .build();
-
         kafkaTemplateIP.send(message);
-        log.info("--- sending message IntegralParameters: " + message.toString());
+        log.info("--- sending message: "+message);
+       // log.info("--- sending message IntegralParameters: " + message.toString());
     }
 
     public void produceMessageUP(UnrecoverableParametersTrends unrecoverableParameters) {
         Message<UnrecoverableParametersTrends> message = MessageBuilder
                 .withPayload(unrecoverableParameters)
-                .setHeader(KafkaHeaders.MESSAGE_KEY,Integer.valueOf(unrecoverableParameters.getPk().getId()).toString())
-                .setHeader(KafkaHeaders.TOPIC,topicUP)
+                .setHeader(KafkaHeaders.MESSAGE_KEY, Integer.valueOf(unrecoverableParameters.getPk().getId()).toString())
+                .setHeader(KafkaHeaders.TOPIC, topicUP)
                 .build();
 
         kafkaTemplateUP.send(message);
-        log.info("--- sending message UnrecoverableParametersTrends: " + message.toString());
+        log.info("--- sending message UnrecoverableParametersTrends: " + message);
     }
 }

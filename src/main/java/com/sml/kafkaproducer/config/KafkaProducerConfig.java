@@ -24,21 +24,26 @@ public class KafkaProducerConfig {
 
     private final ProducerKafkaProperties producerKafkaProperties;
 
-    @Bean
-    public Map<String, Object> producerConfigs() {
-        Map<String, Object> props = new HashMap<>();
-
-        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
-        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
-        props.put(ProducerConfig.CLIENT_ID_CONFIG, producerKafkaProperties.getKafkaProducerId());
-
-        return props;
-    }
+    /**
+     * При создании двух и более producer при установки в единый producerConfigs()     *
+     * возникает ошибка: javax.management.InstanceAlreadyExistsException: kafka.producer:type=
+     * причина: разные потоки обращаются к одному бину....
+     * ????? это не выход -  для предотвращения ошибки следует не устанавливать значения в общем producerConfigs();
+     */
 
     @Bean
     public ProducerFactory<String, IntegralParameters> producerFactoryIP() {
-        return new DefaultKafkaProducerFactory<>(producerConfigs());
+        Map<String, Object> propsIP = new HashMap<>();
+        propsIP.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
+        propsIP.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        propsIP.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
+        propsIP.put(ProducerConfig.CLIENT_ID_CONFIG,
+                producerKafkaProperties.getKafkaProducerId());
+
+        DefaultKafkaProducerFactory factory =
+                new DefaultKafkaProducerFactory<>(propsIP);
+
+        return factory;
     }
 
     @Bean
@@ -51,7 +56,13 @@ public class KafkaProducerConfig {
 
     @Bean
     public ProducerFactory<String, UnrecoverableParametersTrends> producerFactoryUP() {
-        return new DefaultKafkaProducerFactory<>(producerConfigs());
+        Map<String, Object> propsUP = new HashMap<>();
+        propsUP.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
+        propsUP.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        propsUP.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
+        propsUP.put(ProducerConfig.CLIENT_ID_CONFIG, "producer - 888");
+
+        return new DefaultKafkaProducerFactory<>(propsUP);
     }
 
     @Bean
