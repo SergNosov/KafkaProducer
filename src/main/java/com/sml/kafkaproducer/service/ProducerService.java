@@ -2,7 +2,7 @@ package com.sml.kafkaproducer.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import integralparameters.nlmk.l3.sup.IntegralParameters;
+import nlmk.l3.sup.IntegralParameters;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;

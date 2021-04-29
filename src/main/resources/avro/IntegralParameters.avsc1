@@ -1,5 +1,5 @@
 {
-	"namespace":"nlmk.l3.sup",
+	"namespace":"nlmk.l3.nlmk.l3.sup",
 	"type":"record",
 	"doc":"peredacha integralnyh parametrov",
 	"name":"IntegralParameters",

@@ -2,7 +2,7 @@ package com.sml.kafkaproducer.config;
 
 import com.sml.kafkaproducer.config.serializer.AvroSerializer;
 import lombok.RequiredArgsConstructor;
-import integralparameters.nlmk.l3.sup.IntegralParameters;
+import nlmk.l3.sup.IntegralParameters;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
