@@ -8,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import nlmk.l3.sup.EnumOp;
 import nlmk.l3.sup.IntegralParameters;
 import nlmk.l3.sup.RecordPk;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +24,12 @@ import unrecoverableparameterstrends.nlmk.l3.sup.UnrecoverableParametersTrends;
 public class ProducerController {
 
     private final ProducerService producerService;
+
+    @GetMapping("/request")
+    public void sendReq() {
+
+        producerService.produceMessageReq("hello pam-server!!!");
+    }
 
     @GetMapping("/integral_parameters/{correct}")
     public void sendIP(@PathVariable boolean correct) {

@@ -3,6 +3,7 @@ package com.sml.kafkaproducer.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import nlmk.l3.sup.IntegralParameters;
+import org.apache.kafka.common.protocol.types.Field;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;
@@ -18,11 +19,16 @@ public class ProducerService {
 
     @Value(value = "${kafka.topicIP}")
     private String topicIP;
+
     @Value(value = "${kafka.topicUP}")
     private String topicUP;
 
+    @Value(value = "${kafka.topicReq}")
+    private String topicReq;
+
     private final KafkaTemplate<String, IntegralParameters> kafkaTemplateIP;
     private final KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP;
+    private final KafkaTemplate<String, String> kafkaTemplateReq;
 
     public void produceMessageIP(IntegralParameters integralParameters) {
         Message<IntegralParameters> message = MessageBuilder
@@ -44,5 +50,15 @@ public class ProducerService {
 
         kafkaTemplateUP.send(message);
         log.info("--- sending message UnrecoverableParametersTrends: " + message);
+    }
+
+    public void produceMessageReq(String value){
+        Message<String> message = MessageBuilder
+                .withPayload(value)
+                .setHeader(KafkaHeaders.TOPIC, topicReq)
+                .build();
+
+        kafkaTemplateReq.send(message);
+        log.info("--- sending message value: " + message);
     }
 }
