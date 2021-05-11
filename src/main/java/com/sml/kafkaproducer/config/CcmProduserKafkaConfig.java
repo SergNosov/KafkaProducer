@@ -2,6 +2,7 @@ package com.sml.kafkaproducer.config;
 
 import com.sml.kafkaproducer.config.serializer.AvroSerializer;
 import lombok.RequiredArgsConstructor;
+import nlmk.l3.ccm.pgp.AttestationRequest;
 import nlmk.l3.sup.IntegralParameters;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -22,11 +23,11 @@ public class CcmProduserKafkaConfig {
     private final ProducerKafkaProperties producerKafkaProperties;
 
     @Bean
-    public ProducerFactory<String, String> producerFactoryReq() {
+    public ProducerFactory<String, AttestationRequest> producerFactoryReq() {
         Map<String, Object> propsIP = new HashMap<>();
         propsIP.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, producerKafkaProperties.getKafkaServer());
         propsIP.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        propsIP.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        propsIP.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
         propsIP.put(ProducerConfig.CLIENT_ID_CONFIG,
                 "ccm");
 
@@ -37,8 +38,8 @@ public class CcmProduserKafkaConfig {
     }
 
     @Bean
-    public KafkaTemplate<String, String> kafkaTemplateReq() {
-        KafkaTemplate<String, String> template =
+    public KafkaTemplate<String, AttestationRequest> kafkaTemplateReq() {
+        KafkaTemplate<String, AttestationRequest> template =
                 new KafkaTemplate<>(producerFactoryReq());
 
         return template;

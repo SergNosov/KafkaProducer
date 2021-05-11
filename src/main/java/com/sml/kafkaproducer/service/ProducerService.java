@@ -2,6 +2,7 @@ package com.sml.kafkaproducer.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import nlmk.l3.ccm.pgp.AttestationRequest;
 import nlmk.l3.sup.IntegralParameters;
 import org.apache.kafka.common.protocol.types.Field;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,7 +29,7 @@ public class ProducerService {
 
     private final KafkaTemplate<String, IntegralParameters> kafkaTemplateIP;
     private final KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP;
-    private final KafkaTemplate<String, String> kafkaTemplateReq;
+    private final KafkaTemplate<String, AttestationRequest> kafkaTemplateReq;
 
     public void produceMessageIP(IntegralParameters integralParameters) {
         Message<IntegralParameters> message = MessageBuilder
@@ -52,13 +53,14 @@ public class ProducerService {
         log.info("--- sending message UnrecoverableParametersTrends: " + message);
     }
 
-    public void produceMessageReq(String value){
-        Message<String> message = MessageBuilder
+    public void produceMessageReq(AttestationRequest value){
+        Message<AttestationRequest> message = MessageBuilder
                 .withPayload(value)
                 .setHeader(KafkaHeaders.TOPIC, topicReq)
                 .build();
 
         kafkaTemplateReq.send(message);
-        log.info("--- sending message value: " + message);
+        log.info("--- sending message value: {}; OP: {}", value.getPk(), value.getOp());
+       // log.info("--- sending message value: " + message);
     }
 }
