@@ -7,6 +7,7 @@ import com.sml.kafkaproducer.service.ProducerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import nlmk.l3.ccm.pgp.AttestationRequest;
+import nlmk.l3.pdm.SpMicrostructure;
 import nlmk.l3.sup.EnumOp;
 import nlmk.l3.sup.IntegralParameters;
 import nlmk.l3.sup.RecordPk;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
@@ -30,12 +32,25 @@ public class ProducerController {
 
     private final ProducerService producerService;
 
+    @GetMapping({"/pdm/micro"})
+    public void sendPdmMicrostructure() throws FileNotFoundException, JsonProcessingException {
+        SpMicrostructure micro = new ObjectMapper()
+                .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
+                .readValue(getJsonFromPath("src/main/resources/avro/Microstructure.json"),
+                        SpMicrostructure.class
+                );
+
+        System.out.println("--- micro: "+micro);
+
+        producerService.produceMessagePdmMicrostructure(micro);
+    }
+
     @GetMapping({"/request/{erase}","/request"})
     public void sendReq(@PathVariable(required = false) boolean erase) throws FileNotFoundException, JsonProcessingException {
 
         AttestationRequest value = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-                .readValue(getJsonAttestationRequest(), AttestationRequest.class);
+                .readValue(getJsonFromPath("src/main/resources/avro/AttestationRequest28042021.json"), AttestationRequest.class);
 
         if (erase) {
             log.info("--- setting Op to D");
@@ -45,8 +60,8 @@ public class ProducerController {
         producerService.produceMessageReq(value);
     }
 
-    private String getJsonAttestationRequest() throws FileNotFoundException {
-        FileInputStream fis = new FileInputStream("src/main/resources/avro/AttestationRequest28042021.json");
+    private String getJsonFromPath(String path) throws FileNotFoundException {
+        FileInputStream fis = new FileInputStream(new File(path));
         String stringTooLong = IOUtils.toString(fis);
 
         return stringTooLong;

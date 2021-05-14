@@ -2,8 +2,11 @@ package com.sml.kafkaproducer.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import nlmk.l3.ccm.pgp.AttestationRequest;
+import nlmk.l3.pdm.SpMicrostructure;
 import nlmk.l3.sup.IntegralParameters;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.common.protocol.types.Field;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -27,9 +30,12 @@ public class ProducerService {
     @Value(value = "${kafka.topicReq}")
     private String topicReq;
 
+    private final String topicMicrostructure = "000-1.l3-pdm.cdc.sp-microstructure.0";
+
     private final KafkaTemplate<String, IntegralParameters> kafkaTemplateIP;
     private final KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP;
     private final KafkaTemplate<String, AttestationRequest> kafkaTemplateReq;
+    private final KafkaTemplate<String,SpMicrostructure> kafkaTemplatePdm;
 
     public void produceMessageIP(IntegralParameters integralParameters) {
         Message<IntegralParameters> message = MessageBuilder
@@ -62,5 +68,18 @@ public class ProducerService {
         kafkaTemplateReq.send(message);
         log.info("--- sending message value: {}; OP: {}", value.getPk(), value.getOp());
        // log.info("--- sending message value: " + message);
+    }
+
+    public void produceMessagePdmMicrostructure(SpMicrostructure micro){
+        val key = StringUtils.join(micro.getPk().getSystemCode(),
+                "~",micro.getPk().getDirectoryId(),"~",micro.getPk().getId());
+
+        Message<SpMicrostructure> message = MessageBuilder
+                .withPayload(micro)
+                .setHeader(KafkaHeaders.TOPIC, topicMicrostructure)
+                .setHeader(KafkaHeaders.MESSAGE_KEY, key)
+                .build();
+        kafkaTemplatePdm.send(message);
+        log.info("--- sending message micro: {}; OP: {}", micro.getPk(), micro.getOp());
     }
 }

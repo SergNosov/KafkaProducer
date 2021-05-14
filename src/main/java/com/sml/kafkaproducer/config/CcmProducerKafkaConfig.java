@@ -18,7 +18,7 @@ import java.util.Map;
 
 @Configuration
 @RequiredArgsConstructor
-public class CcmProduserKafkaConfig {
+public class CcmProducerKafkaConfig {
 
     private final ProducerKafkaProperties producerKafkaProperties;
 
