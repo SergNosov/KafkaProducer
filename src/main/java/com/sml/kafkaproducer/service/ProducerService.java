@@ -69,7 +69,8 @@ public class ProducerService {
                 .build();
 
         kafkaTemplateReq.send(message);
-        log.info("--- sending message value: {}; OP: {}", value.getPk(), value.getOp());
+        log.info("--- sending message value: {}; OP: {}; data.length: {}",
+                value.getPk(), value.getOp(), value.getData().getLength());
        // log.info("--- sending message value: " + message);
     }
 
@@ -90,7 +91,7 @@ public class ProducerService {
 
         Message<String> message = MessageBuilder
                 .withPayload(jsonString)
-                .setHeader(KafkaHeaders.TOPIC, topicMicrostructure)
+                .setHeader(KafkaHeaders.TOPIC, topicSadim)
                 .build();
         kafkaTemplateSadim.send(message);
 
