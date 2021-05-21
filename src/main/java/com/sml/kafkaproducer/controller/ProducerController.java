@@ -6,6 +6,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.sml.kafkaproducer.service.ProducerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import nlmk.l3.ccm.pgp.AttestationRequest;
 import nlmk.l3.pdm.SpMicrostructure;
 import nlmk.l3.sup.EnumOp;
@@ -31,6 +32,12 @@ import unrecoverableparameterstrends.nlmk.l3.sup.UnrecoverableParametersTrends;
 public class ProducerController {
 
     private final ProducerService producerService;
+
+    @GetMapping({"/sadim"})
+    public void sendSadim() throws FileNotFoundException {
+        val sendingJson = getJsonFromPath("src/main/resources/avro/sadim09052020_1.json");
+        producerService.produceSadimMessage(sendingJson);
+    }
 
     @GetMapping({"/pdm/micro"})
     public void sendPdmMicrostructure() throws FileNotFoundException, JsonProcessingException {

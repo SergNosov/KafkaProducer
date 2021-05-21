@@ -32,10 +32,13 @@ public class ProducerService {
 
     private final String topicMicrostructure = "000-1.l3-pdm.cdc.sp-microstructure.0";
 
+    private final String topicSadim = "PA-MU.NLMK.P3.HSM";
+
     private final KafkaTemplate<String, IntegralParameters> kafkaTemplateIP;
     private final KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP;
     private final KafkaTemplate<String, AttestationRequest> kafkaTemplateReq;
     private final KafkaTemplate<String,SpMicrostructure> kafkaTemplatePdm;
+    private final KafkaTemplate<String,String > kafkaTemplateSadim;
 
     public void produceMessageIP(IntegralParameters integralParameters) {
         Message<IntegralParameters> message = MessageBuilder
@@ -82,4 +85,15 @@ public class ProducerService {
         kafkaTemplatePdm.send(message);
         log.info("--- sending message micro: {}; OP: {}", micro.getPk(), micro.getOp());
     }
+
+    public void produceSadimMessage(String jsonString){
+
+        Message<String> message = MessageBuilder
+                .withPayload(jsonString)
+                .setHeader(KafkaHeaders.TOPIC, topicMicrostructure)
+                .build();
+        kafkaTemplateSadim.send(message);
+
+        log.info("--- sending message sadim.");
+     }
 }
