@@ -92,6 +92,7 @@ public class ProducerService {
         Message<String> message = MessageBuilder
                 .withPayload(jsonString)
                 .setHeader(KafkaHeaders.TOPIC, topicSadim)
+                .setHeader(KafkaHeaders.MESSAGE_KEY,"fakeKey~1234~Qwerty")
                 .build();
         kafkaTemplateSadim.send(message);
 
