@@ -9,6 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import nlmk.l3.ccm.pgp.AttestationRequest;
 import nlmk.l3.pdm.SpMicrostructure;
+import nlmk.l3.pdm.SpTkNum;
+import nlmk.l3.pdm.SpTolLength;
 import nlmk.l3.sup.EnumOp;
 import nlmk.l3.sup.IntegralParameters;
 import nlmk.l3.sup.RecordPk;
@@ -39,17 +41,43 @@ public class ProducerController {
         producerService.produceSadimMessage(sendingJson);
     }
 
-    @GetMapping({"/pdm/micro"})
-    public void sendPdmMicrostructure() throws FileNotFoundException, JsonProcessingException {
+    @GetMapping({"/pdm/micro/{error}","/pdm/micro"})
+    public void sendPdmMicrostructure(@PathVariable(required = false) boolean error) throws FileNotFoundException, JsonProcessingException {
         SpMicrostructure micro = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-                .readValue(getJsonFromPath("src/main/resources/avro/Microstructure.json"),
+                .readValue(getJsonFromPath("src/main/resources/avro/Microstructure_err.json"),
                         SpMicrostructure.class
                 );
 
         System.out.println("--- micro: "+micro);
 
-        producerService.produceMessagePdmMicrostructure(micro);
+        producerService.produceMessagePdmMicrostructure(micro,error);
+    }
+
+    @GetMapping({"/pdm/length"})
+    public void sendPdmLength() throws FileNotFoundException, JsonProcessingException {
+        SpTolLength length = new ObjectMapper()
+                .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
+                .readValue(getJsonFromPath("src/main/resources/avro/SpTolLength_err.json"),
+                        SpTolLength.class
+                );
+
+        System.out.println("--- length: "+length);
+
+        producerService.produceMessagePdmLength(length);
+    }
+
+    @GetMapping({"/pdm/tk-num"})
+    public void sendPdmTkNum() throws FileNotFoundException, JsonProcessingException {
+        val tkNum = new ObjectMapper()
+                .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
+                .readValue(getJsonFromPath("src/main/resources/avro/SpTkNum.json"),
+                        SpTkNum.class
+                );
+
+        System.out.println("--- length: "+tkNum);
+
+        producerService.produceMessagePdmTkNum(tkNum);
     }
 
     @GetMapping({"/request/{erase}","/request"})
@@ -57,7 +85,7 @@ public class ProducerController {
 
         AttestationRequest value = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-                .readValue(getJsonFromPath("src/main/resources/avro/AttestationRequest28042021.json"), AttestationRequest.class);
+                .readValue(getJsonFromPath("src/main/resources/avro/AttestationRequest_11062021.json"), AttestationRequest.class);
 
         if (erase) {
             log.info("--- setting Op to D");
@@ -77,7 +105,8 @@ public class ProducerController {
     @GetMapping("/integral_parameters/{correct}")
     public void sendIP(@PathVariable boolean correct) {
 
-        producerService.produceMessageIP(generateFromJson());
+     //   producerService.produceMessageIP(generateFromJson());
+        producerService.produceMessageIP(generateIP(correct));
     }
 
     private IntegralParameters generateIP(boolean correct) {
@@ -121,16 +150,6 @@ public class ProducerController {
     @GetMapping("/unrecoverable_parameters")
     public void sendUP() throws JsonProcessingException {
 
-//        UnrecoverableParametersTrends unrecoverableParameters = UnrecoverableParametersTrends.newBuilder()
-//                .setTs(LocalDateTime.now().toString())
-//                .setOp(unrecoverableparameterstrends.nlmk.l3.sup.enum_op.I)
-//                .setPk(
-//                        unrecoverableparameterstrends.nlmk.l3.sup.RecordPk.newBuilder()
-//                                .setId(new Random().nextInt(100))
-//                                .build()
-//                )
-//                .setData(null)
-//                .build();
         String json = "{\"ts\": \"2021-04-16T08:17:28.898-03:00\",\n" +
                 "  \"op\": \"U\",\n" +
                 "  \"pk\": {\"id\": 144954755},\n" +
