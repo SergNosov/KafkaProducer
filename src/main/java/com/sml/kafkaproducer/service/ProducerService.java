@@ -90,7 +90,7 @@ public class ProducerService {
             key = "111";
         }
 
-        micro.getPk().setId(key);
+        micro.getPk().setId("555");
 
         Message<SpMicrostructure> message = MessageBuilder
                 .withPayload(micro)
@@ -98,7 +98,7 @@ public class ProducerService {
                 .setHeader(KafkaHeaders.MESSAGE_KEY, key)
                 .build();
         kafkaTemplatePdmMicro.send(message);
-        log.info("--- sending message micro: {}; OP: {}", micro.getPk(), micro.getOp());
+        log.info("--- sending message micro: {}; OP: {}, topic:{}", micro.getPk(), micro.getOp(), topicMicrostructure);
     }
 
     public void produceSadimMessage(String jsonString) {

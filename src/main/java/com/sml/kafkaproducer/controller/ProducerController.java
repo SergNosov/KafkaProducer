@@ -37,7 +37,7 @@ public class ProducerController {
 
     @GetMapping({"/sadim"})
     public void sendSadim() throws FileNotFoundException {
-        val sendingJson = getJsonFromPath("src/main/resources/avro/sadim09052020_1.json");
+        val sendingJson = getJsonFromPath("src/main/resources/avro/sadim706769_error.json");
         producerService.produceSadimMessage(sendingJson);
     }
 
@@ -45,6 +45,7 @@ public class ProducerController {
     public void sendPdmMicrostructure(@PathVariable(required = false) boolean error) throws FileNotFoundException, JsonProcessingException {
         SpMicrostructure micro = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
+               // .readValue(getJsonFromPath("src/main/resources/avro/Microstructure.json"),
                 .readValue(getJsonFromPath("src/main/resources/avro/Microstructure_err.json"),
                         SpMicrostructure.class
                 );
@@ -71,11 +72,11 @@ public class ProducerController {
     public void sendPdmTkNum() throws FileNotFoundException, JsonProcessingException {
         val tkNum = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-                .readValue(getJsonFromPath("src/main/resources/avro/SpTkNum.json"),
+                .readValue(getJsonFromPath("src/main/resources/avro/SpTkNumWithDate.json"),
                         SpTkNum.class
                 );
 
-        System.out.println("--- length: "+tkNum);
+        System.out.println("--- tkNum: "+tkNum);
 
         producerService.produceMessagePdmTkNum(tkNum);
     }
@@ -85,7 +86,7 @@ public class ProducerController {
 
         AttestationRequest value = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-                .readValue(getJsonFromPath("src/main/resources/avro/AttestationRequest_11062021.json"), AttestationRequest.class);
+                .readValue(getJsonFromPath("src/main/resources/avro/198.json"), AttestationRequest.class);
 
         if (erase) {
             log.info("--- setting Op to D");

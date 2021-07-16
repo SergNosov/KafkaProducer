@@ -1,0 +1,14 @@
+{"idedm":"0000420210629111232708002",
+  "time_load":"2021-06-30T06:19:38.000000000+03:00",
+  "time_unload":"2021-06-30T19:05:03.000000000+03:00",
+  "furnace":3,
+  "melt_no":2114914,
+  "lot_no":53604,
+  "steel_grade":"Ст3сп",
+  "slab":{"thickness":240,"width":1550,"length":10400,"weight":30.37},
+  "advice":[
+    {"RateFurnace":116,"RollingPauseTask":9,"RollingPauseAdd":30,"RollingTime":62,"TYPE_ADVICE":1,"ROLL_PAUSE":25200,"REAL_PAUSE":30,"RATE_110":93,"MODE":0}, {"RateFurnace":100,"RollingPauseTask":10,"RollingPauseAdd":30,"RollingTime":62,"TYPE_ADVICE":8,"ROLL_PAUSE":13,"REAL_PAUSE":30,"RATE_110":100,"MODE":0}],
+  "order_finish":
+  {"thickness":8,"width":1500},
+  "chemical":{"AL":0.041,"AS":0,"B":0,"BI":0,"C":0.14,"CA":0,"CD":0,"CO":0,"CR":0.03,"CU":0.06,"F":0,"FE":0,"H":0,"MG":0,"MN":0.51,"MO":0.002,"N":0.005,"NB":0.001,"NI":0.02,"O":0,"P":0.009,"PB":0,"S":0.007,"SB":0,"SE":0,"SI":0.24,"SN":0,"TA":0,"TI":0.002,"VA":0.002,"W":0,"ZN":0,"ZR":0},
+  "strips":[]}
