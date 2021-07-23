@@ -1,0 +1,3529 @@
+{    "ts": "2021-06-21T12:28:17.359+00:00",
+    "op": "U",
+    "pk": {
+      "id": "0001020210601120515296536",
+      "systemCode": "16"
+    },
+    "data": {
+      "primeId": "0001020210601120515296536",
+      "nplv": 2112356,
+      "hnum": 43091,
+      "roll": "1",
+      "length": null,
+      "thickness": 2.0,
+      "width": 974.0,
+      "weightNet": 16.16,
+      "bundleWeight": null,
+      "kceh": 11,
+      "orderNum": 40439418,
+      "orderPos": 1,
+      "specifications": [
+        {
+          "specCode": 38,
+          "specName": "Замер толщины - левый край",
+          "specValue": "1.96",
+          "specTypeCode": 2,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        },
+        {
+          "specCode": 39,
+          "specName": "Замер толщины - правый край",
+          "specValue": "1.97",
+          "specTypeCode": 2,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        },
+        {
+          "specCode": 40,
+          "specName": "Замер толщины - середина",
+          "specValue": "1.98",
+          "specTypeCode": 2,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        },
+        {
+          "specCode": 405,
+          "specName": "Замер ширины",
+          "specValue": "994",
+          "specTypeCode": 2,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        },
+        {
+          "specCode": 44,
+          "specName": "Внутренний диаметр",
+          "specValue": "850",
+          "specTypeCode": 1,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        },
+        {
+          "specCode": 45,
+          "specName": "Признак травления",
+          "specValue": "0",
+          "specTypeCode": 2,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        },
+        {
+          "specCode": 90,
+          "specName": "Номер ФПК с единицей продукции",
+          "specValue": "41036",
+          "specTypeCode": 2,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        },
+        {
+          "specCode": 3,
+          "specName": "Марка стали",
+          "specValue": "08YU",
+          "specTypeCode": 1,
+          "specFormat": null,
+          "specMeasure": null,
+          "group": null,
+          "params": null,
+          "status": null,
+          "equals": null,
+          "min": null,
+          "max": null,
+          "comment": null
+        }
+      ],
+      "orderReq": [
+        {
+          "attrCode": 1,
+          "attrName": "Стандарт на продукцию",
+          "attrValue": "TY 14-106-762-2009",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 2,
+          "attrName": "Стандарт на марку",
+          "attrValue": "GOST 9045-93",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 4,
+          "attrName": "Вид продукции",
+          "attrValue": "РУЛОН",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 5,
+          "attrName": "Стандарт на сортамент",
+          "attrValue": "EN 10051:2011",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 219,
+          "attrName": "Наименование продукции",
+          "attrValue": "HOT ROLLED STEEL",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 221,
+          "attrName": "Доп стандарт на марку",
+          "attrValue": "EN 10204",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 222,
+          "attrName": "Номер ТК или ВТК.версия/маршрут",
+          "attrValue": "ТК 1,2-3-4,5-130.10",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 224,
+          "attrName": "Требуемая марка стали",
+          "attrValue": "08YU",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 227,
+          "attrName": "Тoлщина минимальная",
+          "attrValue": "2",
+          "attrTypeCode": 2,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 231,
+          "attrName": "Ширина минимальная",
+          "attrValue": "974",
+          "attrTypeCode": 2,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 233,
+          "attrName": "Допуск по ширине (+)",
+          "attrValue": "20.00",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 239,
+          "attrName": "Масса единицы продукции мин",
+          "attrValue": "6.000",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 240,
+          "attrName": "Масса единицы продукции макс",
+          "attrValue": "19.000",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 244,
+          "attrName": "Требуемая точность прокатки",
+          "attrValue": "2/3",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 252,
+          "attrName": "Требуемое содержание Si max",
+          "attrValue": "0.030000",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 291,
+          "attrName": "Требуемый характер кромки",
+          "attrValue": "НО",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 292,
+          "attrName": "Требуемая поперечная разнотолщинность min",
+          "attrValue": "0.010",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 293,
+          "attrName": "Требуемая поперечная разнотолщинность max",
+          "attrValue": "0.070",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 295,
+          "attrName": "Требуемая клиновидность max",
+          "attrValue": "0.04",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 297,
+          "attrName": "Требуемое значение местных утолщений max",
+          "attrValue": "0.015",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 298,
+          "attrName": "Требуемая температура смотки min",
+          "attrValue": "550",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 299,
+          "attrName": "Требуемая температура смотки max",
+          "attrValue": "590",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 446,
+          "attrName": "Допуски к внутреннему диаметру min",
+          "attrValue": "30",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 447,
+          "attrName": "Допуски к внутреннему диаметру max",
+          "attrValue": "30",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        },
+        {
+          "attrCode": 448,
+          "attrName": "Признак экспорта",
+          "attrValue": "ЭК",
+          "attrTypeCode": 1,
+          "attrFormat": null,
+          "attrMeasure": null
+        }
+      ],
+      "chemical": [
+        {
+          "chemCode": 9006,
+          "chemName": "Массовая доля углерода, C",
+          "chemValue": ".05",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9007,
+          "chemName": "Массовая доля азота, N",
+          "chemValue": ".004",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9013,
+          "chemName": "Массовая доля алюминия, Al",
+          "chemValue": ".047",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9014,
+          "chemName": "Массовая доля кремния, Si",
+          "chemValue": ".017",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9015,
+          "chemName": "Массовая доля фосфора, P",
+          "chemValue": ".012",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9016,
+          "chemName": "Массовая доля серы, S",
+          "chemValue": ".016",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9022,
+          "chemName": "Массовая доля титана, Ti",
+          "chemValue": ".001",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9023,
+          "chemName": "Массовая доля ванадия, V",
+          "chemValue": ".001",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9024,
+          "chemName": "Массовая доля хрома, Cr",
+          "chemValue": ".03",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9025,
+          "chemName": "Массовая доля марганца, Mn",
+          "chemValue": ".18",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9028,
+          "chemName": "Массовая доля никеля, Ni",
+          "chemValue": ".02",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9029,
+          "chemName": "Массовая доля меди, Cu",
+          "chemValue": ".04",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9041,
+          "chemName": "Массовая доля ниобия, Nb",
+          "chemValue": ".001",
+          "chemFormat": null
+        },
+        {
+          "chemCode": 9042,
+          "chemName": "Массовая доля молибдена, Mo",
+          "chemValue": ".003",
+          "chemFormat": null
+        }
+      ],
+      "mechanical": [
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 1673,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210601121457296872",
+          "formationListNum": 41036,
+          "mechData": [
+            {
+              "mechCode": 50,
+              "mechName": "Толщина образца",
+              "mechFormat": null,
+              "mechValue": "2.01",
+              "mechTypeCode": 2,
+              "mechMeasure": null
+            },
+            {
+              "mechCode": 51,
+              "mechName": "Ширина образца",
+              "mechFormat": null,
+              "mechValue": "20.3",
+              "mechTypeCode": 2,
+              "mechMeasure": null
+            },
+            {
+              "mechCode": 52,
+              "mechName": "Временное сопротивление",
+              "mechFormat": null,
+              "mechValue": "355",
+              "mechTypeCode": 2,
+              "mechMeasure": null
+            },
+            {
+              "mechCode": 53,
+              "mechName": "Предел текучести",
+              "mechFormat": null,
+              "mechValue": "260",
+              "mechTypeCode": 2,
+              "mechMeasure": null
+            },
+            {
+              "mechCode": 54,
+              "mechName": "Относительное удлинение",
+              "mechFormat": null,
+              "mechValue": "41",
+              "mechTypeCode": 2,
+              "mechMeasure": null
+            },
+            {
+              "mechCode": 55,
+              "mechName": "Холодный загиб",
+              "mechFormat": null,
+              "mechValue": "5",
+              "mechTypeCode": 2,
+              "mechMeasure": null
+            },
+            {
+              "mechCode": 72,
+              "mechName": "Дата протокола физмех испытаний в формате",
+              "mechFormat": null,
+              "mechValue": "2021-05-29T00:00:00.000-03:00",
+              "mechTypeCode": 1,
+              "mechMeasure": null
+            }
+          ]
+        }
+      ],
+      "metallographic": [
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2942,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210603122414452386",
+          "formationListNum": 41693,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": ".5",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": ".5",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2942,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210603122615452511",
+          "formationListNum": 41694,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": ".5",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2942,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210607045650749326",
+          "formationListNum": 42982,
+          "metgrapData": [
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": ".5",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2942,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210603121905451830",
+          "formationListNum": 41691,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": ".5",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2942,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210603122414452386",
+          "formationListNum": 41693,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": ".5",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": ".5",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 77,
+              "metgrapName": "Тип А, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 78,
+              "metgrapName": "Тип А, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 79,
+              "metgrapName": "Тип B, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 80,
+              "metgrapName": "Тип B, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 81,
+              "metgrapName": "Тип C, тонкие",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 82,
+              "metgrapName": "Тип C, толстые",
+              "metgrapFormat": null,
+              "metgrapValue": "0",
+              "metgrapTypeCode": "2",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2968,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210601153947302888",
+          "formationListNum": 41124,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2968,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210601121457296872",
+          "formationListNum": 41036,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2968,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210601154310303020",
+          "formationListNum": 41125,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        },
+        {
+          "testArrayId": null,
+          "hnum": null,
+          "protId": null,
+          "protNum": 2968,
+          "sampleId": null,
+          "probeName": null,
+          "probeCode": null,
+          "sampleNum": null,
+          "signAnalysis": null,
+          "formationListId": "0005620210605070545592810",
+          "formationListNum": 42313,
+          "metgrapData": [
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 3,
+              "metgrapName": "Марка стали",
+              "metgrapFormat": null,
+              "metgrapValue": "08Ю",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            },
+            {
+              "metgrapCode": 87,
+              "metgrapName": "№ зерна феррита (осевая)",
+              "metgrapFormat": null,
+              "metgrapValue": "9.0",
+              "metgrapTypeCode": "1",
+              "metgrapMeasure": null
+            }
+          ]
+        }
+      ]
+    }
+}

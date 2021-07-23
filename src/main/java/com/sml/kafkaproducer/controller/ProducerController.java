@@ -86,7 +86,7 @@ public class ProducerController {
 
         AttestationRequest value = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-                .readValue(getJsonFromPath("src/main/resources/avro/198.json"), AttestationRequest.class);
+                .readValue(getJsonFromPath("src/main/resources/avro/AttestationRequest_newAvro23072021.json"), AttestationRequest.class);
 
         if (erase) {
             log.info("--- setting Op to D");
