@@ -37,22 +37,22 @@ public class ProducerController {
 
     @GetMapping({"/sadim"})
     public void sendSadim() throws FileNotFoundException {
-        val sendingJson = getJsonFromPath("src/main/resources/avro/sadim706769_error.json");
+        val sendingJson = getJsonFromPath("src/main/resources/avro/sadim09052020_1.json");
         producerService.produceSadimMessage(sendingJson);
     }
 
-    @GetMapping({"/pdm/micro/{error}","/pdm/micro"})
+    @GetMapping({"/pdm/micro/{error}", "/pdm/micro"})
     public void sendPdmMicrostructure(@PathVariable(required = false) boolean error) throws FileNotFoundException, JsonProcessingException {
         SpMicrostructure micro = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-               // .readValue(getJsonFromPath("src/main/resources/avro/Microstructure.json"),
-                .readValue(getJsonFromPath("src/main/resources/avro/Microstructure_err.json"),
+                .readValue(getJsonFromPath("src/main/resources/avro/Microstructure.json"),
+                        // .readValue(getJsonFromPath("src/main/resources/avro/Microstructure_err.json"),
                         SpMicrostructure.class
                 );
 
-        System.out.println("--- micro: "+micro);
+        System.out.println("--- micro: " + micro);
 
-        producerService.produceMessagePdmMicrostructure(micro,error);
+        producerService.produceMessagePdmMicrostructure(micro, error);
     }
 
     @GetMapping({"/pdm/length"})
@@ -63,7 +63,7 @@ public class ProducerController {
                         SpTolLength.class
                 );
 
-        System.out.println("--- length: "+length);
+        System.out.println("--- length: " + length);
 
         producerService.produceMessagePdmLength(length);
     }
@@ -76,17 +76,20 @@ public class ProducerController {
                         SpTkNum.class
                 );
 
-        System.out.println("--- tkNum: "+tkNum);
+        System.out.println("--- tkNum: " + tkNum);
 
         producerService.produceMessagePdmTkNum(tkNum);
     }
 
-    @GetMapping({"/request/{erase}","/request"})
+    @GetMapping({"/request/{erase}", "/request"})
     public void sendReq(@PathVariable(required = false) boolean erase) throws FileNotFoundException, JsonProcessingException {
 
         AttestationRequest value = new ObjectMapper()
                 .setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"))
-                .readValue(getJsonFromPath("src/main/resources/avro/AttestationRequest_newAvro23072021.json"), AttestationRequest.class);
+                .readValue(getJsonFromPath("src/main/resources/avro/AttReq.json"),
+                        AttestationRequest.class);
+//                .readValue(getJsonFromPath("src/main/resources/avro/AttestationRequest04082021.json"),
+//                        AttestationRequest.class);
 
         if (erase) {
             log.info("--- setting Op to D");
@@ -106,7 +109,7 @@ public class ProducerController {
     @GetMapping("/integral_parameters/{correct}")
     public void sendIP(@PathVariable boolean correct) {
 
-     //   producerService.produceMessageIP(generateFromJson());
+        //   producerService.produceMessageIP(generateFromJson());
         producerService.produceMessageIP(generateIP(correct));
     }
 

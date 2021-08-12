@@ -25,7 +25,7 @@ public class PdmProducerKafkaConfig {
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
-        props.put(ProducerConfig.CLIENT_ID_CONFIG,"pdm");
+        props.put(ProducerConfig.CLIENT_ID_CONFIG, "pdm");
 
         DefaultKafkaProducerFactory factory =
                 new DefaultKafkaProducerFactory<>(props);
@@ -39,7 +39,7 @@ public class PdmProducerKafkaConfig {
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
-        props.put(ProducerConfig.CLIENT_ID_CONFIG,"pdm");
+        props.put(ProducerConfig.CLIENT_ID_CONFIG, "pdm");
 
         DefaultKafkaProducerFactory factory =
                 new DefaultKafkaProducerFactory<>(props);
@@ -53,7 +53,7 @@ public class PdmProducerKafkaConfig {
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, AvroSerializer.class);
-        props.put(ProducerConfig.CLIENT_ID_CONFIG,"pdm");
+        props.put(ProducerConfig.CLIENT_ID_CONFIG, "pdm");
 
         DefaultKafkaProducerFactory factory =
                 new DefaultKafkaProducerFactory<>(props);

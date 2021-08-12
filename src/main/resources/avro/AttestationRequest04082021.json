@@ -1,0 +1,129 @@
+{
+  "ts": "2021-08-03T13:55:50.673-03:00",
+  "op": "U",
+  "pk": {
+    "systemCode": "16",
+    "id": "0001020210301001256068947"
+  },
+  "data": {
+    "primeId": "0001020210228093344016728",
+    "nplv": 2153886,
+    "hnum": 18309,
+    "roll": "1",
+    "length": null,
+    "thickness": 0.0,
+    "width": 1250.0,
+    "weightNet": 21.7,
+    "bundleWeight": null,
+    "kceh": 11,
+    "orderNum": null,
+    "orderPos": null,
+    "specifications": [
+      {
+        "specCode": 45,
+        "specName": "Признак травления",
+        "specValue": "0",
+        "specTypeCode": 2,
+        "specFormat": null,
+        "specMeasure": null
+      },
+      {
+        "specCode": 3,
+        "specName": "Марка стали",
+        "specValue": "08Ю",
+        "specTypeCode": 1,
+        "specFormat": null,
+        "specMeasure": null
+      }
+    ],
+    "orderReq": null,
+    "chemical": [
+      {
+        "chemCode": 9006,
+        "chemName": "Массовая доля углерода, C",
+        "chemValue": ",04",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9007,
+        "chemName": "Массовая доля азота, N",
+        "chemValue": ",003",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9013,
+        "chemName": "Массовая доля алюминия, Al",
+        "chemValue": ",037",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9014,
+        "chemName": "Массовая доля кремния, Si",
+        "chemValue": ",012",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9015,
+        "chemName": "Массовая доля фосфора, P",
+        "chemValue": ",011",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9016,
+        "chemName": "Массовая доля серы, S",
+        "chemValue": ",014",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9022,
+        "chemName": "Массовая доля титана, Ti",
+        "chemValue": ",001",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9023,
+        "chemName": "Массовая доля ванадия, V",
+        "chemValue": ".001",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9024,
+        "chemName": "Массовая доля хрома, Cr",
+        "chemValue": ",02",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9025,
+        "chemName": "Массовая доля марганца, Mn",
+        "chemValue": ",23",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9028,
+        "chemName": "Массовая доля никеля, Ni",
+        "chemValue": ",02",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9029,
+        "chemName": "Массовая доля меди, Cu",
+        "chemValue": ",03",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9041,
+        "chemName": "Массовая доля ниобия, Nb",
+        "chemValue": ".002",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9042,
+        "chemName": "Массовая доля молибдена, Mo",
+        "chemValue": ".003",
+        "chemFormat": null
+      }
+    ],
+    "mechanical": null,
+    "metallographic": null
+  }
+}

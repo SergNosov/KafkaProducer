@@ -33,10 +33,10 @@ public class ProducerService {
     @Value(value = "${kafka.topicReq}")
     private String topicReq;
 
-    private final String topicMicrostructure = "000-1.l3-pdm.cdc.sp-microstructure.0";
+    private final String topicMicrostructure = "000-0.l3-pdm.cdc.sp-microstructure.0";
     private final String topicSadim = "PA-MU.NLMK.P3.HSM";
-    private final String topicLength = "000-1.l3-pdm.cdc.sp-tol-length.0";
-    private final String topicTkNum = "000-1.l3-pdm.cdc.sp-tk-num.0";
+    private final String topicLength = "000-0.l3-pdm.cdc.sp-tol-length.0";
+    private final String topicTkNum = "000-0.l3-pdm.cdc.sp-tk-num.0";
 
     private final KafkaTemplate<String, IntegralParameters> kafkaTemplateIP;
     private final KafkaTemplate<String, UnrecoverableParametersTrends> kafkaTemplateUP;
@@ -69,6 +69,7 @@ public class ProducerService {
     }
 
     public void produceMessageReq(AttestationRequest value) {
+        System.out.println("--- value: " + value);
         Message<AttestationRequest> message = MessageBuilder
                 .withPayload(value)
                 .setHeader(KafkaHeaders.TOPIC, topicReq)

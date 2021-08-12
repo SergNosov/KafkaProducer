@@ -17,7 +17,7 @@ public class ProducerKafkaProperties {
                                    @Value("${kafka.producer.id}") String kafkaProducerId,
                                    @Value("${kafka.topicIP}") String kafkaTopicIP,
                                    @Value("${kafka.topicUP}") String kafkaTopicUP,
-                                   @Value("${kafka.topicReq}")String kafkaTopicReq) {
+                                   @Value("${kafka.topicReq}") String kafkaTopicReq) {
         this.kafkaServer = kafkaServer;
         this.kafkaProducerId = kafkaProducerId;
         this.kafkaTopicIP = kafkaTopicIP;

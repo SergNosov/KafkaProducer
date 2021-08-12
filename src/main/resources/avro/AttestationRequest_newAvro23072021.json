@@ -22,5 +22,495 @@
       {
         "specCode": 45,
         "specName": "Признак травления",
-        "specValue": "0", "specTypeCode": 2,
-        "specFormat": null, "specMeasure": null}, {"specCode": 90, "specName": "Номер ФПК с единицей продукции", "specValue": "27946", "specTypeCode": 2, "specFormat": null, "specMeasure": null}, {"specCode": 431, "specName": "Характер кромки", "specValue": "О", "specTypeCode": 1, "specFormat": null, "specMeasure": null}, {"specCode": 3, "specName": "Марка стали", "specValue": "Ст3пс", "specTypeCode": 1, "specFormat": null, "specMeasure": null}, {"specCode": 951, "specName": "Количество листов в пачке для судостали", "specValue": "1", "specTypeCode": 2, "specFormat": null, "specMeasure": null}], "orderReq": [{"attrCode": 1, "attrName": "Стандарт на продукцию", "attrValue": "ГОСТ 16523-97", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 2, "attrName": "Стандарт на марку", "attrValue": "ГОСТ 380-2005", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 4, "attrName": "Вид продукции", "attrValue": "ЛИСТ", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 5, "attrName": "Стандарт на сортамент", "attrValue": "ГОСТ 19903-2015", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 219, "attrName": "Наименование продукции", "attrValue": "Сталь тонколистовая горячекатаная", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 224, "attrName": "Требуемая марка стали", "attrValue": "Ст3пс", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 225, "attrName": "Требуемая категория", "attrValue": "4", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 227, "attrName": "Тoлщина минимальная", "attrValue": "3", "attrTypeCode": 2, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 231, "attrName": "Ширина минимальная", "attrValue": "1250", "attrTypeCode": 2, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 235, "attrName": "Длина пореза \"ОТ\"", "attrValue": "3000", "attrTypeCode": 2, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 240, "attrName": "Масса единицы продукции макс", "attrValue": "10.000", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 243, "attrName": "Требуемая группа отделки", "attrValue": "IV", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 244, "attrName": "Требуемая точность прокатки", "attrValue": "Б", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 245, "attrName": "Требуемая плоскостность", "attrValue": "ПН", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 291, "attrName": "Требуемый характер кромки", "attrValue": "О", "attrTypeCode": 1, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 950, "attrName": "Тип поверхности", "attrValue": "0", "attrTypeCode": 2, "attrTypeValue": 1, "attrFormat": null, "attrMeasure": null, "listValues": null}, {"attrCode": 955, "attrName": "Дополнительные требования", "attrValue": null, "attrTypeCode": 1, "attrTypeValue": 2, "attrFormat": null, "attrMeasure": null, "listValues": [{"value": "ВЕРТИКАЛЬНЫЙ БРУС"}, {"value": "ГОРИЗОНТАЛЬНЫЕ ПРОКЛАДКИ"}]}], "chemical": [{"chemCode": 9006, "chemName": "Массовая доля углерода, C", "chemValue": ",18", "chemFormat": null}, {"chemCode": 9007, "chemName": "Массовая доля азота, N", "chemValue": ",004", "chemFormat": null}, {"chemCode": 9013, "chemName": "Массовая доля алюминия, Al", "chemValue": ",052", "chemFormat": null}, {"chemCode": 9014, "chemName": "Массовая доля кремния, Si", "chemValue": ",047", "chemFormat": null}, {"chemCode": 9015, "chemName": "Массовая доля фосфора, P", "chemValue": ",009", "chemFormat": null}, {"chemCode": 9016, "chemName": "Массовая доля серы, S", "chemValue": ",008", "chemFormat": null}, {"chemCode": 9022, "chemName": "Массовая доля титана, Ti", "chemValue": ",001", "chemFormat": null}, {"chemCode": 9023, "chemName": "Массовая доля ванадия, V", "chemValue": ".002", "chemFormat": null}, {"chemCode": 9024, "chemName": "Массовая доля хрома, Cr", "chemValue": ",03", "chemFormat": null}, {"chemCode": 9025, "chemName": "Массовая доля марганца, Mn", "chemValue": ",44", "chemFormat": null}, {"chemCode": 9028, "chemName": "Массовая доля никеля, Ni", "chemValue": ",02", "chemFormat": null}, {"chemCode": 9029, "chemName": "Массовая доля меди, Cu", "chemValue": ",04", "chemFormat": null}, {"chemCode": 9041, "chemName": "Массовая доля ниобия, Nb", "chemValue": ".001", "chemFormat": null}, {"chemCode": 9042, "chemName": "Массовая доля молибдена, Mo", "chemValue": ".003", "chemFormat": null}], "mechanical": [{"testArrayId": null, "hnum": null, "protId": null, "protNum": 2365, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620210410222638507488", "formationListNum": 27946, "mechData": [{"mechCode": 50, "mechName": "Толщина образца", "mechFormat": null, "mechValue": "3,08", "mechTypeCode": 2, "mechMeasure": null}, {"mechCode": 51, "mechName": "Ширина образца", "mechFormat": null, "mechValue": "20,4", "mechTypeCode": 2, "mechMeasure": null}, {"mechCode": 52, "mechName": "Временное сопротивление", "mechFormat": null, "mechValue": "415", "mechTypeCode": 2, "mechMeasure": null}, {"mechCode": 53, "mechName": "Предел текучести", "mechFormat": null, "mechValue": "305", "mechTypeCode": 2, "mechMeasure": null}, {"mechCode": 54, "mechName": "Относительное удлинение", "mechFormat": null, "mechValue": "32", "mechTypeCode": 2, "mechMeasure": null}, {"mechCode": 55, "mechName": "Холодный загиб", "mechFormat": null, "mechValue": "5", "mechTypeCode": 2, "mechMeasure": null}, {"mechCode": 72, "mechName": "Дата протокола физмех испытаний в формате", "mechFormat": null, "mechValue": "2020-07-25T00:00:00.000-03:00", "mechTypeCode": 1, "mechMeasure": null}]}], "metallographic": [{"testArrayId": null, "hnum": 65104, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620200727100704090214", "formationListNum": 45512, "metgrapData": []}, {"testArrayId": null, "hnum": 65105, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620200727100704090214", "formationListNum": 45512, "metgrapData": []}, {"testArrayId": null, "hnum": 65105, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620210410222638507488", "formationListNum": 27946, "metgrapData": []}, {"testArrayId": null, "hnum": 65231, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620200803014036669193", "formationListNum": 46826, "metgrapData": []}, {"testArrayId": null, "hnum": 65231, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620200803021907672405", "formationListNum": 46834, "metgrapData": []}, {"testArrayId": null, "hnum": 65349, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620200729113415282007", "formationListNum": 45937, "metgrapData": []}, {"testArrayId": null, "hnum": 65350, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620200729104438278700", "formationListNum": 45927, "metgrapData": []}, {"testArrayId": null, "hnum": 65351, "protId": null, "protNum": null, "sampleId": null, "probeName": null, "probeCode": null, "sampleNum": null, "signAnalysis": null, "formationListId": "0005620200729113415282007", "formationListNum": 45937, "metgrapData": []}]}}
+        "specValue": "0",
+        "specTypeCode": 2,
+        "specFormat": null,
+        "specMeasure": null
+      },
+      {
+        "specCode": 90,
+        "specName": "Номер ФПК с единицей продукции",
+        "specValue": "27946",
+        "specTypeCode": 2,
+        "specFormat": null,
+        "specMeasure": null
+      },
+      {
+        "specCode": 431,
+        "specName": "Характер кромки",
+        "specValue": "О",
+        "specTypeCode": 1,
+        "specFormat": null,
+        "specMeasure": null
+      },
+      {
+        "specCode": 3,
+        "specName": "Марка стали",
+        "specValue": "Ст3пс",
+        "specTypeCode": 1,
+        "specFormat": null,
+        "specMeasure": null
+      },
+      {
+        "specCode": 951,
+        "specName": "Количество листов в пачке для судостали",
+        "specValue": "1",
+        "specTypeCode": 2,
+        "specFormat": null,
+        "specMeasure": null
+      }
+    ],
+    "orderReq": [
+      {
+        "attrCode": 1,
+        "attrName": "Стандарт на продукцию",
+        "attrValue": "ГОСТ 16523-97",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 2,
+        "attrName": "Стандарт на марку",
+        "attrValue": "ГОСТ 380-2005",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 4,
+        "attrName": "Вид продукции",
+        "attrValue": "ЛИСТ",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 5,
+        "attrName": "Стандарт на сортамент",
+        "attrValue": "ГОСТ 19903-2015",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 219,
+        "attrName": "Наименование продукции",
+        "attrValue": "Сталь тонколистовая горячекатаная",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 224,
+        "attrName": "Требуемая марка стали",
+        "attrValue": "Ст3пс",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 225,
+        "attrName": "Требуемая категория",
+        "attrValue": "4",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 227,
+        "attrName": "Тoлщина минимальная",
+        "attrValue": "3",
+        "attrTypeCode": 2,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 231,
+        "attrName": "Ширина минимальная",
+        "attrValue": "1250",
+        "attrTypeCode": 2,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 235,
+        "attrName": "Длина пореза \"ОТ\"",
+        "attrValue": "3000",
+        "attrTypeCode": 2,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 240,
+        "attrName": "Масса единицы продукции макс",
+        "attrValue": "10.000",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 243,
+        "attrName": "Требуемая группа отделки",
+        "attrValue": "IV",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 244,
+        "attrName": "Требуемая точность прокатки",
+        "attrValue": "Б",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 245,
+        "attrName": "Требуемая плоскостность",
+        "attrValue": "ПН",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 291,
+        "attrName": "Требуемый характер кромки",
+        "attrValue": "О",
+        "attrTypeCode": 1,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 950,
+        "attrName": "Тип поверхности",
+        "attrValue": "0",
+        "attrTypeCode": 2,
+        "attrTypeValue": 1,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": null
+      },
+      {
+        "attrCode": 955,
+        "attrName": "Дополнительные требования",
+        "attrValue": null,
+        "attrTypeCode": 1,
+        "attrTypeValue": 2,
+        "attrFormat": null,
+        "attrMeasure": null,
+        "listValues": [
+          {
+            "value": "ВЕРТИКАЛЬНЫЙ БРУС"
+          },
+          {
+            "value": "ГОРИЗОНТАЛЬНЫЕ ПРОКЛАДКИ"
+          }
+        ]
+      }
+    ],
+    "chemical": [
+      {
+        "chemCode": 9006,
+        "chemName": "Массовая доля углерода, C",
+        "chemValue": ",18",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9007,
+        "chemName": "Массовая доля азота, N",
+        "chemValue": ",004",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9013,
+        "chemName": "Массовая доля алюминия, Al",
+        "chemValue": ",052",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9014,
+        "chemName": "Массовая доля кремния, Si",
+        "chemValue": ",047",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9015,
+        "chemName": "Массовая доля фосфора, P",
+        "chemValue": ",009",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9016,
+        "chemName": "Массовая доля серы, S",
+        "chemValue": ",008",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9022,
+        "chemName": "Массовая доля титана, Ti",
+        "chemValue": ",001",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9023,
+        "chemName": "Массовая доля ванадия, V",
+        "chemValue": ".002",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9024,
+        "chemName": "Массовая доля хрома, Cr",
+        "chemValue": ",03",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9025,
+        "chemName": "Массовая доля марганца, Mn",
+        "chemValue": ",44",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9028,
+        "chemName": "Массовая доля никеля, Ni",
+        "chemValue": ",02",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9029,
+        "chemName": "Массовая доля меди, Cu",
+        "chemValue": ",04",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9041,
+        "chemName": "Массовая доля ниобия, Nb",
+        "chemValue": ".001",
+        "chemFormat": null
+      },
+      {
+        "chemCode": 9042,
+        "chemName": "Массовая доля молибдена, Mo",
+        "chemValue": ".003",
+        "chemFormat": null
+      }
+    ],
+    "mechanical": [
+      {
+        "testArrayId": null,
+        "hnum": null,
+        "protId": null,
+        "protNum": 2365,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620210410222638507488",
+        "formationListNum": 27946,
+        "mechData": [
+          {
+            "mechCode": 50,
+            "mechName": "Толщина образца",
+            "mechFormat": null,
+            "mechValue": "3,08",
+            "mechTypeCode": 2,
+            "mechMeasure": null
+          },
+          {
+            "mechCode": 51,
+            "mechName": "Ширина образца",
+            "mechFormat": null,
+            "mechValue": "20,4",
+            "mechTypeCode": 2,
+            "mechMeasure": null
+          },
+          {
+            "mechCode": 52,
+            "mechName": "Временное сопротивление",
+            "mechFormat": null,
+            "mechValue": "415",
+            "mechTypeCode": 2,
+            "mechMeasure": null
+          },
+          {
+            "mechCode": 53,
+            "mechName": "Предел текучести",
+            "mechFormat": null,
+            "mechValue": "305",
+            "mechTypeCode": 2,
+            "mechMeasure": null
+          },
+          {
+            "mechCode": 54,
+            "mechName": "Относительное удлинение",
+            "mechFormat": null,
+            "mechValue": "32",
+            "mechTypeCode": 2,
+            "mechMeasure": null
+          },
+          {
+            "mechCode": 55,
+            "mechName": "Холодный загиб",
+            "mechFormat": null,
+            "mechValue": "5",
+            "mechTypeCode": 2,
+            "mechMeasure": null
+          },
+          {
+            "mechCode": 72,
+            "mechName": "Дата протокола физмех испытаний в формате",
+            "mechFormat": null,
+            "mechValue": "2020-07-25T00:00:00.000-03:00",
+            "mechTypeCode": 1,
+            "mechMeasure": null
+          }
+        ]
+      }
+    ],
+    "metallographic": [
+      {
+        "testArrayId": null,
+        "hnum": 65104,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620200727100704090214",
+        "formationListNum": 45512,
+        "metgrapData": []
+      },
+      {
+        "testArrayId": null,
+        "hnum": 65105,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620200727100704090214",
+        "formationListNum": 45512,
+        "metgrapData": []
+      },
+      {
+        "testArrayId": null,
+        "hnum": 65105,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620210410222638507488",
+        "formationListNum": 27946,
+        "metgrapData": []
+      },
+      {
+        "testArrayId": null,
+        "hnum": 65231,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620200803014036669193",
+        "formationListNum": 46826,
+        "metgrapData": []
+      },
+      {
+        "testArrayId": null,
+        "hnum": 65231,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620200803021907672405",
+        "formationListNum": 46834,
+        "metgrapData": []
+      },
+      {
+        "testArrayId": null,
+        "hnum": 65349,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620200729113415282007",
+        "formationListNum": 45937,
+        "metgrapData": []
+      },
+      {
+        "testArrayId": null,
+        "hnum": 65350,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620200729104438278700",
+        "formationListNum": 45927,
+        "metgrapData": []
+      },
+      {
+        "testArrayId": null,
+        "hnum": 65351,
+        "protId": null,
+        "protNum": null,
+        "sampleId": null,
+        "probeName": null,
+        "probeCode": null,
+        "sampleNum": null,
+        "signAnalysis": null,
+        "formationListId": "0005620200729113415282007",
+        "formationListNum": 45937,
+        "metgrapData": []
+      }
+    ]
+  }
+}
